@@ -10,24 +10,24 @@
 	<!-- link to main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
-    <title>{{page.title}}</title>
+    <title>Pavol Šoltés</title>
   </head>
   <header class="mb-5">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="{{site.url}}">About me</a>
+      <a class="navbar-brand" href="http://localhost:4000">About me</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="{{site.url}}/hobbies">Hobby <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="http://localhost:4000/hobbies">Hobby <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{site.url}}/work">Work</a>
+            <a class="nav-link" href="http://localhost:4000/work">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{site.url}}/documentation">Documentation</a>
+            <a class="nav-link" href="http://localhost:4000/documentation">Documentation</a>
           </li>
         </ul>
       </div>
@@ -35,7 +35,13 @@
   </header>
   <body>
 	<div class=container>
-		{{content}}
+			<div class="jumbotron my-5">
+		<h1 class="display-4">Hello, world!</h1>
+		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		<hr class="my-4">
+		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+	  </div>
 	</div><!--/.container-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h1 class="my-3">{{ page.title }}</h1>
+
+
+<div class="post container">
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li><strong>Typ projektu:</strong> {{page.type}}</li>
+        <li><strong>Cas vykonavania:</strong> {{page.datum}}</li>
+        <li><strong>Odkaz na git:</strong> {{page.gitodkaz|markdownify}}</li>
+        <li><strong>Odkaz na dokumentaciu:</strong> {{page.docodkaz|markdownify}}</li>
+      </ul>
+        {{ content }}
+    </div>
+    <div class="col">
+      <img src="{{site.url}}/img/{{page.imgsrc}}" alt="obrazok projektu" class="img-fluid">
+    </div>
+  </div>
+</div>
