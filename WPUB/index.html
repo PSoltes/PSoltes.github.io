@@ -6,6 +6,9 @@ layout: default
         {%assign WPUBZadania= tag[1]%}
     {%endif%}
 {%endfor%}
+<h2>Zadania na predmet Webové Publikovanie</h2>
 {%for Zadanie in WPUBZadania%}
-<a href="{{{{Zadanie.url|prepend: site.baseurl}}">{{Zadanie.title}}</a>
+<ul>
+    <li><a href="{{{{Zadanie.url|prepend: site.baseurl}}">{{Zadanie.title}}</a></li>
+</ul>
 {%endfor%}
