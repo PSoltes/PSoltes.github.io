@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{%for tag in site.tags%}
+    {%if tag[0] contains "Webové Publikovanie" %}
+        {%assign WPUBZadania= tag[1]%}
+    {%endif%}
+{%endfor%}
+{%for Zadanie in WPUBZadania%}
+<a href="{{{{Zadanie.url|prepend: site.baseurl}}">{{Zadanie.title}}</a>
+{%endfor%}

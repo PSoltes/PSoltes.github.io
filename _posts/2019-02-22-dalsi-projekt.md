@@ -9,6 +9,6 @@ predmet: "Webove Publikovanie"
 gitodkaz: "[Github odkaz tu](https://github.com/PSoltes/PSoltes.github.io)"
 doclink: "WPUB_Z1_DOC"
 docurl: ""
-tags: [Jekyll]
+tags: [Jekyll, Webové Publikovanie]
 ---
 Lalalalalalalala cosi cosi cosi
