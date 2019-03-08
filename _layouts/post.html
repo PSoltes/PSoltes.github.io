@@ -1,19 +1,27 @@
 ---
 layout: default
 ---
+{%if page.doclink !="" %}
+{% assign doc = site.documentation | where_exp:"documentation", "documentation.doclink == page.doclink" | first %}
+{% assign docurl = doc.url%}
+{% else %}
+{% assign docurl = page.docurl%}
+{% endif %}
+
 <h1 class="my-3">{{ page.title }}</h1>
-
-
 <div class="post container">
   <div class="row">
     <div class="col">
       <ul>
-        <li><strong>Typ projektu:</strong> {{page.type}}</li>
+        {%if page.skolsky_projekt== true%}
+        <li><strong>Predmet:</strong> {{page.predmet}}</li>
+        {%endif%}
         <li><strong>Cas vykonavania:</strong> {{page.datum}}</li>
         <li><strong>Odkaz na git:</strong> {{page.gitodkaz|markdownify}}</li>
-        <li><strong>Odkaz na dokumentaciu:</strong> {{page.docodkaz|markdownify}}</li>
+        <li><strong>Odkaz na dokumentaciu:</strong>
+          <a href="{{docurl|prepend: site.baseurl}}">Dokumentacia tu</a></li>
       </ul>
-        {{ content }}
+      {{ content }}
     </div>
     <div class="col">
       <img src="{{site.url}}/img/{{page.imgsrc}}" alt="obrazok projektu" class="img-fluid">

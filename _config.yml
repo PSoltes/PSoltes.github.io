@@ -1,5 +1,7 @@
 name: Hank Quinlan, Horrible Cop
 markdown: kramdown
-collections_dir: my_collections
 collections:
-  - hobbies
+  documentation:
+    output: true
+  hobbies:
+    output: true

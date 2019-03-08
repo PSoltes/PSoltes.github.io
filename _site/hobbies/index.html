@@ -20,14 +20,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="http://localhost:4000/hobbies">Hobby <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://localhost:4000/work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://localhost:4000/documentation">Documentation</a>
           </li>
         </ul>
       </div>
@@ -40,18 +37,33 @@
 
 <div><h1 class="my-3">Lezenie</h1>
 
+
 <p>
     <p>Lezenie je pre mna relativne nove hobby</p>
 
 </p>
 <style>
     .image-gallery {overflow: auto; margin-left: -1%!important;}
-    .image-gallery a {float: left; display: block; margin: 0 0 1% 1%; width: 19%; text-align: center; text-decoration: none!important;}
+    .image-gallery a {float: left; display: block; margin: 0 0 1% 1%; width: 19%; text-align: center; text-decoration: none!important; color: silver!important;}
     .image-gallery a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
     .image-gallery a img {width: 100%; display: block;}
+    .image-gallery a img {
+    /* -webkit-filter: grayscale(100%) brightness(116%) contrast(83%) opacity(70%); */
+    filter: grayscale(100%) brightness(116%) contrast(83%) opacity(70%);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease
+    }
+    .image-gallery a img:hover {
+        filter:none;
+    }
 </style>
 
 <p class="image-gallery">
+    
+    
     
     
     
@@ -83,7 +95,7 @@
     
     
     
-</p>
+</p> <!--from https://jekyllcodex.org/without-plugin/image-gallery/-->
 </div>
 
 
