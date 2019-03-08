@@ -9,6 +9,6 @@ layout: default
 <h2>Zadania na predmet Webové Publikovanie</h2>
 {%for Zadanie in WPUBZadania%}
 <ul>
-    <li><a href="{{{{Zadanie.url|prepend: site.baseurl}}">{{Zadanie.title}}</a></li>
+    <li><a href="{{Zadanie.url|prepend: site.baseurl}}">{{Zadanie.title}}</a></li>
 </ul>
 {%endfor%}
