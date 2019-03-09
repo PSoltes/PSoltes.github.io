@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Moja stranka v jekylle"
-imgsrc: "lele.png"
+imgsrc: "psoltes-github-io-.jpg"
 categories: [HTML]
 datum: "letny semester 2018/2019"
 skolsky_projekt: true
