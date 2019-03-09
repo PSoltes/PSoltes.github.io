@@ -18,8 +18,11 @@ layout: default
         {%endif%}
         <li><strong>Cas vykonavania:</strong> {{page.datum}}</li>
         <li><strong>Odkaz na git:</strong> {{page.gitodkaz|markdownify}}</li>
+        {%if docurl != ""%}
         <li><strong>Odkaz na dokumentaciu:</strong>
-          <a href="{{docurl}}">Dokumentacia tu</a></li>
+          <a href="{{docurl}}">Dokumentacia tu</a>
+        </li>
+        {%endif%}
       </ul>
       {{ content }}
     </div>
