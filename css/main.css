@@ -27,3 +27,8 @@
     .image-gallery a img:hover {
         filter:none;
     }
+
+    iframe
+    {
+        display: block;
+    }

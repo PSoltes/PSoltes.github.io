@@ -4,3 +4,7 @@
     {{content}}
 </p>
 {% include image-gallery.html folder=cesta %} <!--from https://jekyllcodex.org/without-plugin/image-gallery/-->
+
+{% if page.video %}
+    {% include yt.html id=page.video %}
+{% endif %}
