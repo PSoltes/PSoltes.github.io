@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Moja stranka v jekyll"
+title: "Moja stranka v jekylle"
 imgsrc: "lele.png"
 categories: [HTML]
 datum: "letny semester 2018/2019"
@@ -11,4 +11,4 @@ doclink: "WPUB_Z1_DOC"
 docurl: ""
 tags: [Jekyll, Webové Publikovanie]
 ---
-Lalalalalalalala cosi cosi cosi
+Na tomto projekte som pracoval na statickom webovom sídle, ktoré sa vytvára pomocou nástroja [Jekyll](https://jekyllrb.com/). Tento projekt slúžil okrem získania skúsenosti s statickými webovými sídlami aj na vytvorenie osobne stránky na gite.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Moja bakalárska práca - Biologicky inšpirovaný algoritmus v R"
-imgsrc: "lele.png"
 categories: [R]
 datum: "2018/2019"
 skolsky_projekt: true

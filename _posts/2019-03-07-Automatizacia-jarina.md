@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Automatizácia odosielania údajov z elektromera"
-imgsrc: "lele.png"
 categories: [Java]
 datum: "letny semester 2018/2019"
 skolsky_projekt: false

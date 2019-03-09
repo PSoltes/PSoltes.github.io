@@ -1,12 +1,11 @@
     .image-gallery 
     {
-        display:flex;
-        flex-direction: row;
         overflow: auto;
         margin-left: -1%!important;
     }
     .image-gallery a 
     {
+        float:left;
         display: block;
         margin: 0 0 1% 1%;
         width: 19%;
@@ -31,4 +30,9 @@
     iframe
     {
         display: block;
+    }
+
+    main
+    {
+        height:80vh;
     }
