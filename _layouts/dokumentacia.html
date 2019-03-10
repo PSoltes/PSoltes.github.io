@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h2>{{page.title}}</h2>
+<ul>
+    {%if page.semester%}
+    <li><b>Program: </b>INFO-B</li>
+    <li><b>Predmet: </b>{{page.predmet}}</li>
+    <li><b>Ročník: </b>{{page.rocnik}}</li>
+    <li><b>Semester: </b>{{page.semester}}</li>
+    <li><b>Cvičiaci: </b>{{page.cviciaci}}</li>
+    {%else%}
+    <li><b>Datum: </b>{{page.datum}}</li>
+    {%endif%}
+</ul>
+<p>
+    {{content}}
+</p>

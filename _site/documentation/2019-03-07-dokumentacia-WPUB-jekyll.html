@@ -10,7 +10,7 @@
 	<!-- link to main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="http://localhost:4000/css/main.css">
 
-    <title>Jekyll dokumentacia</title>
+    <title>Dokumentácia pre statické sídlo v Jekylle</title>
   </head>
   <header class="mb-5">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -35,8 +35,45 @@
   </header>
   <body>
 	<main class=container>
-		<p>cosi cosi cosi</p>
+		<h2>Dokumentácia pre statické sídlo v Jekylle</h2>
+<ul>
+    
+    <li><b>Program: </b>INFO-B</li>
+    <li><b>Predmet: </b>Webové Publikovanie</li>
+    <li><b>Ročník: </b>tretí</li>
+    <li><b>Semester: </b>letný semester 2018/2019</li>
+    <li><b>Cvičiaci: </b>doc. Ing. Marián Šimko, PhD.</li>
+    
+</ul>
+<p>
+    <p><strong><em>Použité layouty</em></strong></p>
 
+<p>V tomto projekte sú použité 4 rôzne layouty. Prvým je základný layout <em>default.html</em>, od ktorého dedia všetky ostatné. Obsahuje metadáta o stránke a navigáciu a footer.<br />
+Ďalším je layout <em>post.html</em>, ktorý je layoutom opisu projektu. Obsahuje zoznam, v ktorom sú informácie o projekte a dovoľuje pridať fotku, ak je to potrebné.
+Ďalším layoutom je <em>hobby.html</em>, ktorý je layoutom pre odstavce o mojich hobby. Tento layout je zložený z jednoduchého odseku textu ale dovoľuje pridať video a galériu fotiek.
+Posledným layoutom je layout dokumentácie, ktorý zasa pomocou zoznamu na začiatku opisuje niektoré informácie o projekte. Tento layout by sa pravdepodobne dal zapísať aj len použitím markdownu.</p>
+
+<p><strong><em>Použité prvky</em></strong></p>
+
+<p>V tomto projekte sú použité kolekcie na oddelenie jednotlivých príspevkov o hobby. Konkrétne _hobbies, ktorá obsahuje jednotlivé md súbory obsahujúce opis mojich hobby.<br />
+Čo sa týka filtrov a tagov, tak je v tomto projekte použité množstvo control flow tagov ako ‘if’ napríklad na zobrazenie voliteľného obsahu alebo pri použití rôznych druhov dokumentácie</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if page.doclink !="" 
+ assign doc = site.documentation | where_exp:"documentation", "documentation.doclink == page.doclink" | first 
+ assign docurl = doc.url
+ else 
+ assign docurl = page.docurl
+ endif
+</code></pre></div></div>
+<p>Použité filtre sú hlavne filtre prepend a append na úpravu linkov. Taktiež som použil filter where_exp na selektovanie postov podľa atribútu.
+Premenné sú použité pri vyššie spomínaných linkoch, kde linky môžu byť rôznych druhov a tiež napríklad na uloženie selektovaných postov. Tiež premenné sú použité na prenos niektorých dát o postoch ako sú názvy projektov, tagy, kategórie.</p>
+
+<p>Použité pluginy sú pluginy site-map, ktorým si tvorím xml súbor, ktorý by som mohol ponúknuť vyhľadávacím nástrojom na lepšie hľadanie mojej stránky a jemoji na použitie emotikonov v texte. Taktiež by som mohol použiť plugin na embednutie youtube videa, avšak rozhodol som sa proti tomu, lebo som chcel, aby video fungovalo aj na github pages (ak je to potrebné pre splnenie podmienok zadania, veľmi rád ho tam doplním).</p>
+
+<p><strong><em>Výzor stránky</em></strong></p>
+
+<p>Pre výzor stránky som použil predpripravené komponenty <a href="https://getbootstrap.com/">Bootstrapu 4</a>. Galériu obrázkov som použil zo stránky <a href="https://jekyllcodex.org/without-plugin/image-gallery/">jekyll codex</a>, pričom som si trochu upravil nimi pridané css a vložil ho do spoločného súboru main.css.</p>
+
+</p>
   </main><!--/.container-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
