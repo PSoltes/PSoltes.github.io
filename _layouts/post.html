@@ -16,11 +16,11 @@ layout: default
         {%if page.skolsky_projekt== true%}
         <li><strong>Predmet:</strong> {{page.predmet}}</li>
         {%endif%}
-        <li><strong>Cas vykonavania:</strong> {{page.datum}}</li>
+        <li><strong>Čas vykonávania:</strong> {{page.datum}}</li>
         <li><strong>Odkaz na git:</strong> {{page.gitodkaz|markdownify}}</li>
         {%if docurl != ""%}
-        <li><strong>Odkaz na dokumentaciu:</strong>
-          <a href="{{docurl}}">Dokumentacia tu</a>
+        <li><strong>Odkaz na dokumentáciu:</strong>
+          <a href="{{docurl}}">Dokumentácia tu</a>
         </li>
         {%endif%}
       </ul>

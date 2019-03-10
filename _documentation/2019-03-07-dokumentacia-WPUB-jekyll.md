@@ -8,6 +8,7 @@ rocnik: "tretí"
 semester: "letný semester 2018/2019"
 ---
 Projekt sa nachádza [tu](https://psoltes.github.io). Na localhoste je potrebné ho spúšťať cez bundle exec jekyll serve, pretože som použil bundler.
+
 ***Použité layouty***
 
 V tomto projekte sú použité 4 rôzne layouty. Prvým je základný layout _default.html_, od ktorého dedia všetky ostatné. Obsahuje metadáta o stránke a navigáciu a footer.  
