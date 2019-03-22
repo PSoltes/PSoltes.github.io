@@ -8,21 +8,21 @@ rocnik: "tretí"
 semester: "letný semester 2018/2019"
 ---
 
-###Použité elementy
+***Použité elementy***
 
-Na vytvorenie hierarchie dokumentu som použil elementy <chapter> a do seba vnárajúce elementy <section>. Prílohy a zoznamy boli automaticky generované Docbookom.
+Na vytvorenie hierarchie dokumentu som použil elementy ```<chapter>``` a do seba vnárajúce elementy ```<section>```. Prílohy a zoznamy boli automaticky generované Docbookom.
 
-Na zvýraznenie textu som použil element <emphasis> a na zoznamy elementy <itemizedlist> a <listitem>. Na tvorenie rovníc <subscript> a <superscript>.
+Na zvýraznenie textu som použil element ```<emphasis>``` a na zoznamy elementy ```<itemizedlist>``` a ```<listitem>```. Na tvorenie rovníc ```<subscript>``` a ```<superscript>```.
 
-Poznámku pod čiarou som pridal pomocou <footnote>, pričom táto poznámka bola umelo pridaná pre potreby tohoto projektu.
+Poznámku pod čiarou som pridal pomocou ```<footnote>```, pričom táto poznámka bola umelo pridaná pre potreby tohoto projektu.
 
-Odkazy na obrázky, rovnice a citácie som realizoval pomocou elementu <xref>. Literatúru som zadefinoval pomocou elementov <bibliography> a <bibentry>.
+Odkazy na obrázky, rovnice a citácie som realizoval pomocou elementu ```<xref>```. Literatúru som zadefinoval pomocou elementov ```<bibliography>``` a ```<bibentry>```.
 
-Tabuľky, obrázky a rovnice boli vložené pomocou elementov <figure>, <table>, <equation> respektíve.
+Tabuľky, obrázky a rovnice boli vložené pomocou elementov ```<figure>, <table>, <equation>``` respektíve.
 
-Index bol vytvorený pomocou prázndného elementu <index/> a elementov <indexterm>, ktoré obsahovali jednotlivé úrovne zaradenia.
+Index bol vytvorený pomocou prázndného elementu ```<index/>``` a elementov ```<indexterm>```, ktoré obsahovali jednotlivé úrovne zaradenia.
 
-###Úpravy šablóny
+***Úpravy šablóny***
 
 V šablóne som odstránil z prvej strany neexistujúci obrázok a následne namiesto neho pridal kúsok prázdneho miesta.
 
