@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Zadanie v DocBook-u"
+title: "Zadanie v XSLT - Prezentácia v XML"
 categories: [XML]
 datum: "letny semester 2018/2019"
 skolsky_projekt: true
