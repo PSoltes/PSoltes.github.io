@@ -23,4 +23,4 @@ Niektoré elementy ako list umožňujú ich zmenu, cez ich atribúty.
 
 ***Ukážka vzorovej prezentácie a jej pdf výsledok***
 
-Netransformované xml môžete nájsť [tu]("{{'prezentacia.xml'|prepend: site.baseurl}}") a jej [pdf výsledok]("{{'output.pdf'|prepend: site.baseurl}}") alebo [xhtml verzia]("{{'presentation/slide1.xhtml'|prepend: site.baseurl}}")
+Netransformované xml môžete nájsť [tu](https://psoltes.github.io/prezentacia.xml) a jej [pdf výsledok](https://psoltes.github.io/output.pdf) alebo [xhtml verzia](https://psoltes.github.io/presentation/slide1.xhtml)
