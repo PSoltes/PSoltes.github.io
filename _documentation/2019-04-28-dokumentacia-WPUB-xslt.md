@@ -23,4 +23,4 @@ Niektoré elementy ako list umožňujú ich zmenu, cez ich atribúty.
 
 ***Ukážka vzorovej prezentácie a jej pdf výsledok***
 
-Netransformované xml môžete nájsť [tu]("../prezentacia.xml") a jej [pdf výsledok]("../output.pdf") alebo [xhtml verzia]("../presentation/slide1.xhtml")
+Netransformované xml môžete nájsť [tu]("{{'prezentacia.xml'|prepend: site.baseurl}}") a jej [pdf výsledok]("{{'output.pdf'|prepend: site.baseurl}}") alebo [xhtml verzia]("{{'presentation/slide1.xhtml'|prepend: site.baseurl}}")
