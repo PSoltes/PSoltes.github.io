@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+
+<slideShow>
+    <slide>
+        <title-slide>
+            <title>Prírodou inšpirované algoritmy</title>
+            <subtitle>Delenie a krátky opis</subtitle>
+            <author-block>
+                <name>Palino Šoltés</name>
+                <date>28. 4. 2019</date>
+            </author-block>
+        </title-slide>
+    </slide>
+    <slide>
+        <navigation-slide/>
+    </slide>
+    <slide>
+        <content-slide>
+            <title>Definícia a delenie prírodou inšpirovaných algoritmov</title>
+            <para>Medzi prírodou inšpirované algoritmy môžeme zaradiť všetky nové algoritmy,ktorých vznik bol inšpirovaný prírodou. Väčšina nových úspešných metaheuristík a algoritmov je inšpirovaná prírodou, pretože množstvo procesov vprírode bolo optimalizované milióny rokov. Delíme ich na:</para>
+            <columns>
+                <list numbered="true">
+                    <listitem>Fyzikou a chémiou inšpirované algoritmy</listitem>
+                    <listitem>Biologicky inšpirované algoritmy</listitem>
+                </list>
+                <image source="images/Delenie.png"/>
+            </columns>
+        </content-slide>
+    </slide>
+
+    <slide>
+        <content-slide>
+            <title>Fyzikou a chémiou inšpirované algoritmy</title>
+            <columns>
+                <para>Fyzikou inšpirované algoritmy sú, ako je zrejmé z názvu, optimalizačnéalgoritmy inšpirované fyzikálnymi procesmi a zákonmi vo vesmíre.</para>
+                <list>
+                    <listitem>prvé náznaky - 1982</listitem>
+                    <listitem>prvý algoritmus - Kvantovo-inšpirovaný genetický algoritmus - 1995</listitem>
+                    <listitem>hlavný boom po roku 2000 (BBBC, QIPS, GSA)</listitem>
+                </list>
+            </columns>
+        </content-slide>
+    </slide>
+    <slide>
+        <content-slide>
+            <title>Big bang, Big crunch BBBC</title>
+            <columns>
+                <list>
+                    <listitem>2 fázy - big bang a big crunch</listitem>
+                    <listitem>Big crunch - vypočítanie stredu bodov v priestore</listitem>
+                    <listitem>Rozhodenie bodov po priestore na základe normálneho rozdelenia, ktorého variancia sa s iteráciami zmenšuje</listitem>
+                </list>
+                <image source="images/BBBC1.PNG" caption="Body a ich stred po 1. iterácií" height="27mm"/>
+            </columns>
+            <columns>
+                <image source="images/BBBC2.PNG" caption="Body a ich stred po 4. iterácií" height="27mm"/>
+                <image source="images/BBBC3.PNG" caption="Body a ich stred po 500. iterácií" height="27mm"/>
+            </columns>
+        </content-slide>
+    </slide>
+    <slide>
+        <content-slide>
+            <title>Biologicky inšpirované algoritmy</title>
+            <columns>
+                <para>Biologicky inšpirované algoritmy sú druhom prírodou inšpirovaných algorit-mov, ktoré vznikli na základe pozorovania správania živých organizmov aleboprocesov ktorými na nich vplývala príroda. Delíme ich na:</para>
+                <list>
+                    <listitem>Genetické a evolučné algoritmy</listitem>
+                    <listitem>Rojovo inšpirované algoritmy</listitem>
+                    <listitem>Ostatné</listitem>
+                </list>
+            </columns>
+            <table>
+                <caption>Príklady algoritmov</caption>
+                <tablehead>
+                    <tablecell>
+                        Genetické a evolučné algoritmy
+                    </tablecell>
+                    <tablecell>
+                        Rojovo inšpirované algoritmy
+                    </tablecell>
+                    <tablecell>
+                        Ostatné
+                    </tablecell>
+                </tablehead>
+                <tablerow>
+                    <tablecell>
+                        GASA
+                    </tablecell>
+                    <tablecell>
+                       PSO
+                    </tablecell>
+                    <tablecell>
+                       ASO
+                    </tablecell>
+                </tablerow>
+                <tablerow>
+                    <tablecell>
+                        DE
+                    </tablecell>
+                    <tablecell>
+                        MSA
+                    </tablecell>
+                    <tablecell>
+                    </tablecell>
+                </tablerow>
+                <tablerow>
+                    <tablecell>
+                    </tablecell>
+                    <tablecell>
+                        ABC
+                    </tablecell>
+                    <tablecell>
+                    </tablecell>
+                </tablerow>
+            </table>
+        </content-slide>
+    </slide>
+    <slide>
+        <content-slide>
+            <title>MSA - Hľadanie pomocou molí</title>
+                <list>
+                    <listitem>Algoritmus na základe fototaxie molí</listitem>
+                    <listitem>Fototaxia - pohyb organizmov ku zdroju svetla (napr. slnečnice)</listitem>
+                </list>
+                <para>
+                    Algoritmus má dve časti:
+                </para>
+                <list numbered="true">
+                    <listitem>Poletovanie okolo zdroja svetla (najlepšej mole) pomocou lévyho letov</listitem>
+                    <listitem>Priamy pohyb k zdroju svetla (najlepšej moli)</listitem>
+                </list>
+                <para>
+                    Tieto dve časti sa aplikujú na prvú, lepšiu polovicu molí (tj. bodov v priestore hľadania) a druhú polovicu respektíve. Tieto dve metódy predstavujú dve typické fázy metaheuristík: hľadanie a využívanie.
+                </para>
+        </content-slide>
+    </slide>
+    <slide>
+        <content-slide>
+            <title>Tabuľka skratiek názvov algoritmov</title>
+            <para>Tabuľka skratiek použitých v tejto prezentácií</para>
+            <table>
+                <tablehead>
+                    <tablecell>
+                        Skratka
+                    </tablecell>
+                    <tablecell>
+                        Pôvodný názov
+                    </tablecell>
+                    <tablecell>
+                        Rok publikácie
+                    </tablecell>
+                </tablehead>
+                <tablerow>
+                    <tablecell>
+                        BBBC
+                    </tablecell>
+                    <tablecell>
+                       Big Bang Big Crunch
+                    </tablecell>
+                    <tablecell>
+                       2006
+                    </tablecell>
+                </tablerow>
+                <tablerow>
+                    <tablecell>
+                        DE
+                    </tablecell>
+                    <tablecell>
+                       Differential evolution
+                    </tablecell>
+                    <tablecell>
+                       1997
+                    </tablecell>
+                </tablerow>
+                <tablerow>
+                    <tablecell>
+                        PSO
+                    </tablecell>
+                    <tablecell>
+                        Particle swarm optimization
+                    </tablecell>
+                    <tablecell>
+                    1995
+                    </tablecell>
+                </tablerow>
+                <tablerow>
+                    <tablecell>
+                        GSA
+                    </tablecell>
+                    <tablecell>
+                        Gravitational search algorithm
+                    </tablecell>
+                    <tablecell>
+                        2009
+                    </tablecell>
+                </tablerow>
+                <tablerow>
+                    <tablecell>
+                        MSA
+                    </tablecell>
+                    <tablecell>
+                        Moth Search Algorithm
+                    </tablecell>
+                    <tablecell>
+                        2016
+                    </tablecell>
+                </tablerow>
+                <tablerow>
+                    <tablecell>
+                        ASO
+                    </tablecell>
+                    <tablecell>
+                        Anarchic society optimization
+                    </tablecell>
+                    <tablecell>
+                        2011
+                    </tablecell>
+                </tablerow>
+                <tablerow>
+                    <tablecell>
+                        ABC
+                    </tablecell>
+                    <tablecell>
+                        Artificial Bee Colony
+                    </tablecell>
+                    <tablecell>
+                        2005
+                    </tablecell>
+                </tablerow>
+            </table>
+        </content-slide>
+    </slide>
+
+    <slide>
+        <content-slide>
+            <title>Zdroje</title>
+                <list>
+                    <listitem>Shailesh Tiwari Anupam Biswas, K. K.Mishra and A. K. Misra. Physics-inspired optimization algorithms: A survey.Journal of Optimization,2013, 2013.</listitem>
+                    <listitem>S Binitha, S Siva Sathya, et al. A survey of bio inspired optimizationalgorithms.International Journal of Soft Computing and Engineering,2(2):137–151, 2012.</listitem>
+                    <listitem>Ibrahim Eksin Osman K. Erol. A new optimization method: Big bang–bigcrunch.Advances in engineering software, 37, 2006.</listitem>
+                    <listitem>Gai-Ge Wang.  Moth search algorithm: a bio-inspired metaheuristicalgorithm for global optimization problems.Memetic Computing, pages1–14, 2016.</listitem>
+                    <listitem>Iztok Fister Jr., Xin-She Yang, Iztok Fister, Janez Brest, and DušanFister. A brief review of nature-inspired algorithms for optimization.Elektrotehniški vestnik, 80(3), 2013.</listitem>
+                </list>
+        </content-slide>
+    </slide>
+
+
+
+</slideShow>
