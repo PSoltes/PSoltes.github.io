@@ -1,0 +1,135 @@
+/*html{
+    font-family: 'Roboto', sans-serif;
+}*/
+h1{
+    margin:1%;
+}
+h2{
+    margin-bottom:1%;
+    margin-top:1%;
+}
+body{
+    flex:1;
+}
+footer{
+    height:50px;
+}
+nav{
+    flex:1;
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+i{
+    font-size: 24px;
+    margin:5%;
+}
+.content h2{
+    border-bottom: 2px solid;
+    margin-left: 3%;
+    padding:20px;
+}
+main{
+    height: 450px;
+    width: 800px;
+    display: flex;
+    margin:auto;
+}
+.title-slide{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+.author-block{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 2%;
+    bottom: 2%;
+}
+.content-slide{
+    display: flex;
+    flex-direction: row;
+}
+.colorful-box{
+    width:20%;
+    -webkit-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: flex-start;
+}
+.columns{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+}
+.columns ~ p, .columns ~ ol, .columns ~ ul, .columns ~ .table-container{
+    flex:1;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.horizontal-center{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.vertical-center.col, .vertical-center.content{
+   justify-content: center;
+}
+p, ol, ul{
+    padding: 2% 3% 2% 5%;
+    margin: 0;
+}
+.columns p, .columns ol, .columns ul, .columns .table-container, .columns .image-container{
+    flex:1;
+}
+.table-container
+{
+    margin:auto;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+.image{
+    flex:1;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    margin:2%;
+  }
+table{
+    width:96%;
+    border:1px solid;
+    margin:2%;
+    text-align: center;
+}
+
+.vertical-center{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+i{
+    padding:2%;
+}
+nav a{
+    color:darkslategrey;
+    text-decoration: none;
+}
