@@ -32,4 +32,10 @@ layout: default
     </div>
     {%endif%}
   </div>
+  {%if page.album%}
+  {%assign cesta="/img/" | append: page.album %}
+  <div class="row">
+      {% include image-gallery.html folder=cesta %} <!--from https://jekyllcodex.org/without-plugin/image-gallery/-->
+  </div>
+  {%endif%}
 </div>
