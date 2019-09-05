@@ -36,3 +36,8 @@
     {
         min-height:80vh;
     }
+    
+    .yt-wrapper
+    {
+        max-width: 650px;
+    }
