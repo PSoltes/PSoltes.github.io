@@ -18,9 +18,9 @@ type Props = {
 };
 
 const menuActions = [
-  { label: 'Kariéra', onClick: () => console.log('kariera') },
-  { label: 'Hobby', onClick: () => console.log('hobby') },
-  { label: 'Škola', onClick: () => console.log('škola') },
+  { label: 'Career', onClick: () => console.log('kariera') },
+  { label: 'Hobbies', onClick: () => console.log('hobby') },
+  { label: 'Contact', onClick: () => console.log('škola') },
 ];
 const Header = ({ className = '', style }: Props) => {
   const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 10 });
@@ -29,7 +29,7 @@ const Header = ({ className = '', style }: Props) => {
   return (
     <S.Wrapper scrolled={trigger}>
       <img
-        src="/react.svg"
+        src="/logo192.png"
         alt=""
         style={{ maxWidth: `${theme.toolbar.height}` }}
       />

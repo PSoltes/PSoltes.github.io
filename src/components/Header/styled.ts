@@ -14,10 +14,10 @@ position: fixed;
 left: 0;
 top: 0;
 width: 100%;
-color: ${props => props.scrolled ? theme.colors.text : theme.colors.darkText};
-background-color: ${props => props.scrolled ? theme.colors.secondary : transparentize(0.9, theme.colors.secondary) };
+color: ${theme.colors.darkText};
+background-color: ${props => props.scrolled ? theme.colors.darkBackground : transparentize(0.9, theme.colors.darkBackground) };
 z-index: 50;
-transition: background-color 0.3s ease-in;
+transition: background-color 0.3s ease-in, border-bottom 0.3s ease-in;
 border-bottom: 3px solid ${props => props.scrolled ? theme.colors.darkDividers : 'transparent'};
 `
 

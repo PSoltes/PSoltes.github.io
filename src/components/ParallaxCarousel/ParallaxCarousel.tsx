@@ -21,7 +21,7 @@ const ParallaxCarousel = ({content}: ParallaxCarouselProps) => {
   }, [selectedImageIndex, content]);
 
   return (
-    <div>
+    <div style={{height: '100vh'}}>
       <TransitionGroup>
         <CSSTransition
           classNames="slide"

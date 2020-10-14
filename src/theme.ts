@@ -5,9 +5,9 @@ export const theme = {
         background: '#C5C6C7',
         darkBackground: '#0B0C10',
         darkDividers: '#1F2833',
-        primary: '#45A29E',
+        primary: '#66FCF1',
         darkText: '#C5C6C7',
-        secondary: '#66FCF1',
+        secondary: '#45A29E',
         text: '#0B0C10',
     },
     spacing: {

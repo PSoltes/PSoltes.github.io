@@ -14,7 +14,7 @@ background-image: url(${props => props.url});
 `
 
 export const Overlay = styled.div`
-background-color: ${transparentize(0.25, theme.colors.darkBackground)};
+background-image: linear-gradient(to top, ${transparentize(0.1, theme.colors.darkBackground)}, ${transparentize(0.56, theme.colors.darkBackground)});
 color: ${theme.colors.primary};
 flex-direction: column;
 flex: 0 0 100%;
