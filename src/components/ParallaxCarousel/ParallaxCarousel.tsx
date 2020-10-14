@@ -5,12 +5,13 @@ import * as S from './styled';
 
 
 interface ParallaxCarouselProps {
+  id?: string;
   content: {
     path: string;
     imageContent: ReactNode | ReactNode[]
   }[]
 }
-const ParallaxCarousel = ({content}: ParallaxCarouselProps) => {
+const ParallaxCarousel = ({content, id}: ParallaxCarouselProps) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
 
   useEffect(() => {
@@ -21,7 +22,7 @@ const ParallaxCarousel = ({content}: ParallaxCarouselProps) => {
   }, [selectedImageIndex, content]);
 
   return (
-    <div style={{height: '100vh'}}>
+    <div id={id} style={{height: '100vh'}}>
       <TransitionGroup>
         <CSSTransition
           classNames="slide"

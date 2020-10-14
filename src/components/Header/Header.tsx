@@ -7,10 +7,14 @@ import {
   IconButton,
   useScrollTrigger,
   MenuItem,
+  Paper,
+  Popper,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { theme } from 'theme';
 import { ShowOnLarge, ShowOnMobile } from 'components';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+
 
 type Props = {
   className?: string;
@@ -18,9 +22,9 @@ type Props = {
 };
 
 const menuActions = [
-  { label: 'Career', onClick: () => console.log('kariera') },
-  { label: 'Hobbies', onClick: () => console.log('hobby') },
-  { label: 'Contact', onClick: () => console.log('škola') },
+  { label: 'Career', href: '#career' },
+  { label: 'Hobbies', href: '#hobbies' },
+  { label: 'Contact', href: '#contact' },
 ];
 const Header = ({ className = '', style }: Props) => {
   const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 10 });
@@ -34,27 +38,55 @@ const Header = ({ className = '', style }: Props) => {
         style={{ maxWidth: `${theme.toolbar.height}` }}
       />
       <ShowOnLarge>
-        {menuActions.map((action) => (
-          <Button variant="text" color="inherit" onClick={action.onClick}>
-            {action.label}
-          </Button>
-        ))}
+        <S.ThemedButtonGroup variant="text" color="inherit">
+          {menuActions.map((action) => (
+            <Button href={action.href}>{action.label}</Button>
+          ))}
+        </S.ThemedButtonGroup>
       </ShowOnLarge>
       <ShowOnMobile>
-        <IconButton onClick={() =>setMenuOpen(!menuOpen)} ref={ref} color="primary">
-          <MenuIcon />
-        </IconButton>
-        <S.ThemedMenu
-          id="simple-menu"
-          anchorEl={ref.current}
-          keepMounted
-          open={menuOpen}
-          onClose={() => setMenuOpen(false)}
-        >
-          {menuActions.map((action) => (
-            <MenuItem onClick={action.onClick}>{action.label}</MenuItem>
-          ))}
-        </S.ThemedMenu>
+        <ClickAwayListener onClickAway={() => setMenuOpen(false)}>
+          <div>
+            <IconButton
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+              }}
+              ref={ref}
+              color="primary"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Popper
+              open={menuOpen}
+              anchorEl={ref.current}
+              placement="bottom"
+              disablePortal={false}
+              modifiers={{
+                flip: {
+                  enabled: false,
+                },
+                preventOverflow: {
+                  enabled: true,
+                  boundariesElement: 'scrollParent',
+                },
+              }}
+            >
+              <Paper>
+                {menuActions.map((action, index) => (
+                  <MenuItem
+                    button
+                    key={index}
+                    onClick={() => {
+                      window.location.replace(action.href);
+                    }}
+                  >
+                    {action.label}
+                  </MenuItem>
+                ))}
+              </Paper>
+            </Popper>
+          </div>
+        </ClickAwayListener>
       </ShowOnMobile>
     </S.Wrapper>
   );

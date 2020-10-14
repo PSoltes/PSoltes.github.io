@@ -17,14 +17,15 @@ function App() {
           content="To base of HTML and CSS add love to typescript. Gently whisk in Angular and React. Bake for few years at FIIT STU and voila.... you got me.
 (I also love baking....  :D)"
         />
-        <div style={{ height: '100vh' }}></div>
+        <div id="career" style={{ height: '100vh' }}></div>
         <ParallaxCarousel
+          id="hobbies"
           content={Object.values(images).map((path) => ({
             path,
             imageContent: <div>lel</div>,
           }))}
         />
-        <div style={{ height: '100vh' }}></div>
+        <div id="contact" style={{ height: '100vh' }}></div>
       </main>
     </MuiThemeProvider>
   );

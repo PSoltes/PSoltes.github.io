@@ -1,4 +1,4 @@
-import { Menu } from '@material-ui/core'
+import { ButtonGroup, Menu } from '@material-ui/core'
 import { transparentize } from 'polished'
 import styled from 'styled-components'
 import {theme} from 'theme'
@@ -27,4 +27,12 @@ export const ThemedMenu= styled(Menu).attrs(props => ({classes:{ paper: 'appMenu
     border-radius: 0;
     color: ${theme.colors.primary};
 }
+`
+
+export const ThemedButtonGroup = styled(ButtonGroup).attrs(props => ({classes: { ...props.classes, groupedTextHorizontal: 'appBtnGroupTextHorizontal'}}))`
+margin: 0 ${theme.spacing.l};
+& .appBtnGroupTextHorizontal:not(:last-child) {
+    border-right: 1px solid ${theme.colors.primary};
+}
+
 `
