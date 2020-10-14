@@ -2,11 +2,11 @@ import { createMuiTheme } from "@material-ui/core"
 
 export const theme = {
     colors: {
-        background: '#C5C6C7',
+        background: '#ffffff',
         darkBackground: '#0B0C10',
         darkDividers: '#1F2833',
         primary: '#66FCF1',
-        darkText: '#C5C6C7',
+        darkText: '#ffffff',
         secondary: '#45A29E',
         text: '#0B0C10',
     },

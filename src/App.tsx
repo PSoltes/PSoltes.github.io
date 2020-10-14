@@ -10,38 +10,13 @@ function App() {
     <MuiThemeProvider theme={MuiTheme}>
       <main className="App">
         <Header />
-        <Parallax hasOverlay backgroundImageUrl={'/main-page-background.jpg'}>
-          <div style={{ height: 64 }}></div>
-          <div style={{ textAlign: 'center' }}>
-            <span style={{ fontFamily: 'PermanentMarker', fontSize: '25vmin' }}>
-              Hello
-            </span>
-            <p
-              style={{ textAlign: 'left', color: '#ffffff', fontSize: '6vmin' }}
-            >
-              To base of <span style={{ color: '#E44D26' }}>HTML</span> and{' '}
-              <span style={{ color: '#2965F1' }}>CSS</span> add love to{' '}
-              <span
-                style={{
-                  backgroundColor: '#007ACC',
-                  borderRadius: 5,
-                  padding: '4px',
-                }}
-              >
-                typescript
-              </span>
-              . Gently whisk in
-              <span style={{
-                  backgroundColor: '#B52E31',
-                  borderRadius: 5,
-                  padding: '4px',
-                  color: '#000000'
-                }}> Angular</span> and <span>React</span>. Bake for few years at{' '}
-              <span>FIIT STU</span> and voila.... you got me. (I also love
-              baking.... :D)
-            </p>
-          </div>
-        </Parallax>
+        <Parallax
+          hasOverlay
+          backgroundImageUrl={'/main-page-background.jpg'}
+          title="Hello"
+          content="To base of HTML and CSS add love to typescript. Gently whisk in Angular and React. Bake for few years at FIIT STU and voila.... you got me.
+(I also love baking....  :D)"
+        />
         <div style={{ height: '100vh' }}></div>
         <ParallaxCarousel
           content={Object.values(images).map((path) => ({
