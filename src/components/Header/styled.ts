@@ -14,9 +14,10 @@ position: fixed;
 left: 0;
 top: 0;
 width: 100%;
+margin-bottom: ${theme.spacing.m};
 color: ${theme.colors.darkText};
 background-color: ${props => props.scrolled ? theme.colors.darkBackground : transparentize(0.9, theme.colors.darkBackground) };
-z-index: 50;
+z-index: ${theme.toolbar.zIndex};
 transition: background-color 0.3s ease-in, border-bottom 0.3s ease-in;
 border-bottom: 3px solid ${props => props.scrolled ? theme.colors.darkDividers : 'transparent'};
 `

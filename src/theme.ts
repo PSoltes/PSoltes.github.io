@@ -20,7 +20,10 @@ export const theme = {
     },
     toolbar: {
         height: '6.25vh', //vh
-        mobileHeight: '40px', //px
+        zIndex: 100,
+    },
+    popper: {
+        zIndex: 150
     },
     breakpoints: {
         mobile: 768
@@ -37,7 +40,7 @@ export const MuiTheme = createMuiTheme({
         }
     },
     typography: {
-        fontFamily: 'Roboto'
+        fontFamily: 'Oxygen'
     },
     spacing: [0, 2, 4, 8, 16, 32]
 })

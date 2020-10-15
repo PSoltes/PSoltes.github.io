@@ -1,20 +1,14 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import CSS from 'csstype';
 
 import * as S from './styled';
 import {
   Button,
-  IconButton,
   useScrollTrigger,
   MenuItem,
-  Paper,
-  Popper,
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
 import { theme } from 'theme';
-import { ShowOnLarge, ShowOnMobile } from 'components';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-
+import { PopperMenu, ShowOnLarge, ShowOnMobile } from 'components';
 
 type Props = {
   className?: string;
@@ -28,8 +22,6 @@ const menuActions = [
 ];
 const Header = ({ className = '', style }: Props) => {
   const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 10 });
-  const ref = useRef<HTMLButtonElement>(null);
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
     <S.Wrapper scrolled={trigger}>
       <img
@@ -39,54 +31,37 @@ const Header = ({ className = '', style }: Props) => {
       />
       <ShowOnLarge>
         <S.ThemedButtonGroup variant="text" color="inherit">
-          {menuActions.map((action) => (
-            <Button href={action.href}>{action.label}</Button>
+          {menuActions.map((action, index) => (
+            <Button key={index} href={action.href}>{action.label}</Button>
           ))}
         </S.ThemedButtonGroup>
       </ShowOnLarge>
       <ShowOnMobile>
-        <ClickAwayListener onClickAway={() => setMenuOpen(false)}>
-          <div>
-            <IconButton
+        <PopperMenu
+          placement="bottom"
+          disablePortal={false}
+          modifiers={{
+            flip: {
+              enabled: false,
+            },
+            preventOverflow: {
+              enabled: true,
+              boundariesElement: 'scrollParent',
+            },
+          }}
+        >
+          {menuActions.map((action, index) => (
+            <MenuItem
+              button
+              key={index}
               onClick={() => {
-                setMenuOpen(!menuOpen);
-              }}
-              ref={ref}
-              color="primary"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Popper
-              open={menuOpen}
-              anchorEl={ref.current}
-              placement="bottom"
-              disablePortal={false}
-              modifiers={{
-                flip: {
-                  enabled: false,
-                },
-                preventOverflow: {
-                  enabled: true,
-                  boundariesElement: 'scrollParent',
-                },
+                window.location.replace(action.href);
               }}
             >
-              <Paper>
-                {menuActions.map((action, index) => (
-                  <MenuItem
-                    button
-                    key={index}
-                    onClick={() => {
-                      window.location.replace(action.href);
-                    }}
-                  >
-                    {action.label}
-                  </MenuItem>
-                ))}
-              </Paper>
-            </Popper>
-          </div>
-        </ClickAwayListener>
+              {action.label}
+            </MenuItem>
+          ))}
+        </PopperMenu>
       </ShowOnMobile>
     </S.Wrapper>
   );
