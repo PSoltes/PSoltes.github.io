@@ -1,5 +1,10 @@
 export const images = [
   {
+    path: "https://i.ibb.co/R40HmSF/image1.jpg",
+    title: "Hobbies",
+    content: 'My hobbies are a mystery... and to solve a mystery you must be paitient. If you are worthy my story will reveal itself to you.... or maybe you should, you know... try pressing arrows to to side?'
+  },
+  {
     path:
       "https://i.ibb.co/p4Z3dWf/37790038-1828544477210932-4915247091363610624-o.jpg",
     title: "Larp and DnD",
@@ -10,11 +15,6 @@ export const images = [
       "https://i.ibb.co/Q9nQGgM/61627651-2673719065990858-9013091825317052416-o.jpg",
     title: "Wood Carving",
     content: 'My hobbies are a mystery... and to solve a mystery you must be paitient. If you prove your patience my story will reveal itself to you.... or you could, you know... try pressing arrows to to side?'
-  },
-  {
-    path: "https://i.ibb.co/R40HmSF/image1.jpg",
-    title: "Hobbies",
-    content: 'My hobbies are a mystery... and to solve a mystery you must be paitient. If you are worthy my story will reveal itself to you.... or maybe you should, you know... try pressing arrows to to side?'
   },
   {
     path: "https://i.ibb.co/bRm84LP/IMG-20200208-105729.jpg",

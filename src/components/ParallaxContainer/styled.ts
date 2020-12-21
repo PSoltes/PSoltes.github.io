@@ -15,7 +15,8 @@ background-image: url(${props => props.url});
 `
 
 export const ContentWrapper = styled.div`
-& > .parallax-title {
+height: 100%;
+& .parallax-title {
   font-family: PermanentMarker;
   font-size: 15vmin;
   color: ${theme.colors.primary};
@@ -25,14 +26,14 @@ export const ContentWrapper = styled.div`
   font-size: 25vmin;
 }
 @media only screen and (min-width: ${theme.breakpoints.mobile + 1}px) {
-  margin: 13vh 25vw 0 25vw;
+  padding: 13vh 0 0 0;
   & > .parallax-paragraph {
     font-size: 3.12vmin;
   }
 }
 @media only screen and (max-width: ${theme.breakpoints.mobile}px) {
   text-align: center;
-  margin: 20vh ${theme.spacing.m} 0 ${theme.spacing.m};
+  padding: 20vh 0 0 0;
 }
 `
 
