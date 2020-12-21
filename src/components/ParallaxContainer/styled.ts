@@ -17,9 +17,12 @@ background-image: url(${props => props.url});
 export const ContentWrapper = styled.div`
 & > .parallax-title {
   font-family: PermanentMarker;
-  font-size: 25vmin;
+  font-size: 15vmin;
   color: ${theme.colors.primary};
   margin: 0;
+}
+& > .parallax-title.big {
+  font-size: 25vmin;
 }
 @media only screen and (min-width: ${theme.breakpoints.mobile + 1}px) {
   margin: 13vh 25vw 0 25vw;

@@ -15,6 +15,7 @@ const ParallaxContainer = ({
   children,
   backgroundImageUrl,
   hasOverlay = false,
+  bigTitle,
   title,
   content,
 }: PropsWithChildren<Props>) => {
@@ -26,7 +27,7 @@ const ParallaxContainer = ({
   ) : (
     <S.ContentWrapper>
       <div style={{ height: theme.toolbar.height }}></div>
-      <h1 className="parallax-title">
+      <h1 className={`parallax-title ${bigTitle ? 'big': ''}`}>
         {title}
       </h1>
       <p className="parallax-paragraph">

@@ -8,7 +8,10 @@ interface ParallaxCarouselProps {
   id?: string;
   content: {
     path: string;
-    imageContent: ReactNode | ReactNode[]
+    imageContent: {
+      title: string;
+      content?: ReactNode | ReactNode[]
+    }
   }[]
 }
 const ParallaxCarousel = ({content, id}: ParallaxCarouselProps) => {
@@ -34,9 +37,9 @@ const ParallaxCarousel = ({content, id}: ParallaxCarouselProps) => {
               key={selectedImageIndex}
               hasOverlay
               backgroundImageUrl={content[selectedImageIndex].path}
-            >
-              {content[selectedImageIndex].imageContent}
-            </Parallax>
+              title={content[selectedImageIndex].imageContent.title}
+              content={content[selectedImageIndex].imageContent.content}
+            />
           </S.ParallaxWrapperForCarousel>
         </CSSTransition>
       </TransitionGroup>
