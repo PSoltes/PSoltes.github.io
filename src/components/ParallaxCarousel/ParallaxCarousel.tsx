@@ -34,7 +34,6 @@ const ParallaxCarousel = ({ content, id }: ParallaxCarouselProps) => {
           <S.ParallaxWrapperForCarousel>
             <Parallax
               key={selectedImageIndex}
-              hasOverlay
               backgroundImageUrl={content[selectedImageIndex].path}
               title={content[selectedImageIndex].imageContent.title}
               content={content[selectedImageIndex].imageContent.content}

@@ -11,7 +11,7 @@ function App() {
       <main className="App">
         <Header />
         <Parallax
-          hasOverlay
+          overlayColor={theme.colors.darkBackground}
           backgroundImageUrl={"/main-page-background.jpg"}
           title="Hello"
           content="To base of HTML and CSS add love to typescript. Gently whisk in Angular and React. Bake for few years at FIIT STU and voila.... you got me.

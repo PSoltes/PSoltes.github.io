@@ -8,7 +8,7 @@ import * as S from "./styled";
 
 type Props = {
   backgroundImageUrl: string;
-  hasOverlay?: boolean;
+  overlayColor?: string;
   title?: string;
   content?: ReactNode | ReactNode[];
   bigTitle?: boolean;
@@ -19,7 +19,7 @@ type Props = {
 const ParallaxContainer = ({
   children,
   backgroundImageUrl,
-  hasOverlay = false,
+  overlayColor = 'transparent',
   bigTitle,
   title,
   content,
@@ -60,8 +60,8 @@ const ParallaxContainer = ({
       </Grid>
   );
   return (
-    <S.ParallaxBackground url={backgroundImageUrl}>
-      {hasOverlay ? <S.Overlay>{parallaxInsides}</S.Overlay> : parallaxInsides}
+    <S.ParallaxBackground url={backgroundImageUrl} overlayColor={overlayColor}>
+      {parallaxInsides}
     </S.ParallaxBackground>
   );
 };
