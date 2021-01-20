@@ -13,11 +13,18 @@ function App() {
         <Parallax
           overlayColor={theme.colors.darkBackground}
           backgroundImageUrl={"/main-page-background.jpg"}
-          title="Hello"
-          content="To base of HTML and CSS add love to typescript. Gently whisk in Angular and React. Bake for few years at FIIT STU and voila.... you got me.
-(I also love baking....  :D)"
-          bigTitle
-        />
+        >
+          <Grid container direction="column">
+            <Heading level={1} colored>
+              Hello
+            </Heading>
+            <p>
+              To base of HTML and CSS add love to typescript. Gently whisk in
+              Angular and React. Bake for few years at FIIT STU and voila....
+              you got me. (I also love baking.... :D)
+            </p>
+          </Grid>
+        </Parallax>
         <div id="career" style={{ height: "100vh", margin: theme.spacing.xl }}>
           <Heading level={3}>Education</Heading>
           <Grid container>
@@ -35,7 +42,11 @@ function App() {
           </Grid>
           <Grid container>
             <Grid item md={4}>
-              <img alt="Web frameworks logos" src="/frameworklogos.png" />
+              <img
+                alt="Web frameworks logos"
+                src="/frameworklogos.png"
+                
+              />
             </Grid>
             <Grid item md={8}>
               <h2>Career</h2>
@@ -50,19 +61,28 @@ function App() {
                 love to Typescript and React. As i continue to work there i
                 strive to be better at design and be on lookout for new
                 technologies such as Svelte. For more structured info, please,
-                see my <a href="/CV_placeholder.pdf" target="_blank">CV</a> or head on out to my linked.in.
+                see my{" "}
+                <a href="/CV_placeholder.pdf" target="_blank">
+                  CV
+                </a>{" "}
+                or head on out to my linked.in.
               </p>
             </Grid>
           </Grid>
         </div>
         <ParallaxCarousel
           id="hobbies"
+          overlayColor={theme.colors.darkBackground}
           content={images.map((image) => ({
             path: image.path,
-            imageContent: {
-              title: image.title,
-              content: image.content,
-            },
+            imageContent: (
+              <div>
+                <Heading level={2} colored>
+                  {image.title}
+                </Heading>
+                <p>{image.content}</p>
+              </div>
+            ),
           }))}
         />
         <div id="contact" style={{ height: "100vh" }}></div>
