@@ -1,5 +1,6 @@
 import { Grid, Hidden, IconButton } from "@material-ui/core";
 import { ChevronRight, ChevronLeft } from "@material-ui/icons";
+import { Heading } from "components";
 import React, { PropsWithChildren, ReactNode } from "react";
 import { theme } from "theme";
 
@@ -43,7 +44,7 @@ const ParallaxContainer = ({
         </Hidden>
         <Grid item direction="column" xs={12} md={6} component={S.ContentWrapper}>
           <div style={{ height: theme.toolbar.height }}></div>
-          <h1 className={`parallax-title ${bigTitle ? "big" : ""}`}>{title}</h1>
+          <Heading level={bigTitle ? 1 : 2} colored>{title}</Heading>
           <p className="parallax-paragraph">{content}</p>
         </Grid>
 

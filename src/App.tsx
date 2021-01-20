@@ -1,6 +1,6 @@
 import { MuiThemeProvider, Grid } from "@material-ui/core";
 import { MuiTheme, theme } from "theme";
-import { Header, Parallax, ParallaxCarousel } from "components";
+import { Header, Heading, Parallax, ParallaxCarousel } from "components";
 import React from "react";
 import "./App.css";
 import { images } from "images";
@@ -19,7 +19,7 @@ function App() {
           bigTitle
         />
         <div id="career" style={{ height: "100vh", margin: theme.spacing.xl }}>
-          <h2>Education</h2>
+          <Heading level={3}>Education</Heading>
           <Grid container>
             <Grid item md={9}>
               <p>
