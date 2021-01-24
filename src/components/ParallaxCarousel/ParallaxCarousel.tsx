@@ -9,7 +9,7 @@ interface ParallaxCarouselProps {
   id?: string;
   overlayColor?: string;
   content: {
-    path: string;
+    path: string | {mobile: string; large: string};
     imageContent: ReactNode | ReactNode[];
   }[];
 }

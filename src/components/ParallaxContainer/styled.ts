@@ -3,7 +3,13 @@ import { transparentize } from "polished";
 import { theme } from "theme";
 
 export const ParallaxBackground = styled.div`
-  background-image: url(${(props) => props.url});
+  @media only screen and (max-width: ${theme.breakpoints.mobile}px) {
+    background-image: url(${(props) => props.url.mobile});
+  }
+  @media only screen and (min-width: ${theme.breakpoints.mobile + 1}px) {
+    background-image: url(${(props) => props.url.large});
+  }
+
   position: relative;
   height: 100vh;
   display: flex;

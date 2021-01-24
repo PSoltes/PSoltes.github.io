@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Parallax
           overlayColor={theme.colors.darkBackground}
-          backgroundImageUrl={"/main-page-background.jpg"}
+          backgroundImageUrl={{mobile:"/main-page-background.jpg", large: "/frameworklogos-small.png"}}
         >
           <Grid container direction="column">
             <Heading level={1} colored>
