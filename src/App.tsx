@@ -25,7 +25,10 @@ function App() {
             </p>
           </Grid>
         </Parallax>
-        <div id="career" style={{ height: "100vh", margin: theme.spacing.xl }}>
+        <div
+          id="career"
+          style={{ minHeight: "100vh", margin: theme.spacing.xl }}
+        >
           <Heading level={3}>Education</Heading>
           <Grid container>
             <Grid item md={9}>
@@ -42,11 +45,16 @@ function App() {
           </Grid>
           <Grid container>
             <Grid item md={4}>
-              <img
-                alt="Web frameworks logos"
-                src="/frameworklogos.png"
-                
-              />
+              <picture>
+                <source
+                  media={`(min-width: ${theme.breakpoints.mobile + 1}px)`}
+                  srcSet="/frameworklogos.png"
+                />
+                <img
+                  src="frameworklogos-small.png"
+                  alt="Web frameworks logos i've worked with"
+                />
+              </picture>
             </Grid>
             <Grid item md={8}>
               <h2>Career</h2>
