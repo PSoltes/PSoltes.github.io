@@ -42,5 +42,5 @@ export const MuiTheme = createMuiTheme({
     typography: {
         fontFamily: 'Oxygen'
     },
-    spacing: [0, 2, 4, 8, 16, 32]
+    spacing: [0, 2, 4, 8, 16, 32, 40, 56, 88, 128]
 })

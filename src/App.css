@@ -1,9 +1,28 @@
 .App {
   background-color: #ffffff;
-  font-size: 3.12vmin;
+  font-size: 4vmin;
 }
 
 img {
   width: 100%;
   height: auto;
 }
+.parallax-content {
+  margin: 0 2%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+@media only screen and (min-width: 769px) {
+  .parallax-content {
+    margin: 0 25%;
+    text-align: initial;
+  }
+
+  .App {
+    font-size: 3vmin;
+  }
+}
+

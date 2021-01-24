@@ -12,18 +12,21 @@ function App() {
         <Header />
         <Parallax
           overlayColor={theme.colors.darkBackground}
-          backgroundImageUrl={{mobile:"/main-page-background.jpg", large: "/frameworklogos-small.png"}}
+          backgroundImageUrl={{
+            large: "/main-page-background.jpg",
+            mobile: "/main-page-background_mobile.jpg",
+          }}
         >
-          <Grid container direction="column">
+          <div className="parallax-content">
             <Heading level={1} colored>
               Hello
             </Heading>
             <p>
-              To base of HTML and CSS add love to typescript. Gently whisk in
-              Angular and React. Bake for few years at FIIT STU and voila....
+              To base of <span style={{color:'#E44D26'}}>HTML</span> and <span style={{color:'#2965F1'}}>CSS</span> add love to <span style={{color:'#fff', backgroundColor:'#007ACC', borderRadius:3, padding:2}}>typescript.</span> Gently whisk in{" "}
+              <span style={{color:'#000', backgroundColor:'#B52E31', borderRadius:3, padding:2}}>Angular</span> and <span style={{color:'#61DBFB'}}>React</span>. Bake for few years at <span style={{color:'#36B9C1'}}>FIIT STU</span> and voila....
               you got me. (I also love baking.... :D)
             </p>
-          </Grid>
+          </div>
         </Parallax>
         <div
           id="career"
@@ -61,7 +64,7 @@ function App() {
               <p>
                 My programming work experience started in 2019 at the start of
                 my master studies. As i was always interested in web design and
-                developement I found my place at <strong>AMCEF</strong> , small
+                developement I found my place at <a href="https://amcef.sk/"><strong>AMCEF</strong></a> , small
                 company founded at FIIT by FIIT students. There i improved my
                 skills with Angular and React. I worked on few projects like
                 custom e-shop for ski centers, website for transfers providers
