@@ -8,7 +8,7 @@ const colored = css`
 
 export const AppH1 = styled.h1`
   @media only screen and (max-width: ${theme.breakpoints.mobile}px) {
-    font-size: 15vmin;
+    font-size: 20vmin;
   }
   @media only screen and (min-width: ${theme.breakpoints.mobile + 1}px) {
     font-size: 25vmin;
@@ -22,7 +22,7 @@ export const AppH2 = styled.h2`
     font-size: 15vmin;
   }
   @media only screen and (min-width: ${theme.breakpoints.mobile + 1}px) {
-    font-size: 9vmin;
+    font-size: 12vmin;
   }
   &.color {
     ${colored}
