@@ -9,11 +9,15 @@ interface ParallaxCarouselProps {
   id?: string;
   overlayColor?: string;
   content: {
-    path: string | {mobile: string; large: string};
+    path: string | { mobile: string; large: string };
     imageContent: ReactNode | ReactNode[];
   }[];
 }
-const ParallaxCarousel = ({ content, id, overlayColor }: ParallaxCarouselProps) => {
+const ParallaxCarousel = ({
+  content,
+  id,
+  overlayColor,
+}: ParallaxCarouselProps) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
 
   // useEffect(() => {
@@ -92,6 +96,16 @@ const ParallaxCarousel = ({ content, id, overlayColor }: ParallaxCarouselProps) 
                 </Hidden>
               </Grid>
             </Parallax>
+            <div className="parallax-carousel_dot-container">
+              {content.map((item, index) => (
+                <div
+                  className={`parallax-carousel_dot ${
+                    index === selectedImageIndex &&
+                    "parallax-carousel_dot_selected"
+                  }`}
+                ></div>
+              ))}
+            </div>
           </S.ParallaxWrapperForCarousel>
         </CSSTransition>
       </TransitionGroup>
