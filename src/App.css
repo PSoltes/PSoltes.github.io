@@ -1,6 +1,6 @@
 .App {
   background-color: #ffffff;
-  font-size: 4vmin;
+  font-size: 100%;
 }
 
 img {
@@ -10,7 +10,13 @@ img {
 
 @media only screen and (min-width: 769px) {
   .App {
-    font-size: 3vmin;
+    font-size: 125%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .App {
+    font-size: 150%;
   }
 }
 

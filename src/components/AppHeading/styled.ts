@@ -33,7 +33,7 @@ export const AppH3 = styled.h3`
     font-size: 9vmin;
   }
   @media only screen and (min-width: ${theme.breakpoints.mobile + 1}px) {
-    font-size: 5vmin;
+    font-size: 4vmin;
   }
   &.color {
     ${colored}
