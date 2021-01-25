@@ -2,7 +2,7 @@ export const images = [
   {
     path: "https://i.ibb.co/R40HmSF/image1.jpg",
     title: "Hobbies",
-    content: 'My hobbies are a mystery... and to solve a mystery you must be paitient. If you are worthy my story will reveal itself to you.... or maybe you should, you know... try pressing arrows to to side?'
+    content: 'My hobbies are a mystery... and to solve a mystery you must be paitient. If you are worthy my story will reveal itself to you.... or maybe you should, you know... try pressing arrows to to side (swipe?)?'
   },
   {
     path:

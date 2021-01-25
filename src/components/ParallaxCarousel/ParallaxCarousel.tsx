@@ -30,13 +30,6 @@ const ParallaxCarousel = ({
     setSelectedImageIndex(nextIndex);
   };
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     const nextIndex = (selectedImageIndex + 1) % content.length;
-  //     setSelectedImageIndex(nextIndex);
-  //   }, 5000);
-  // }, [selectedImageIndex, content]);
-
   return (
     <Hammer
       onSwipe={({direction, deltaX}:HammerInput) => {
